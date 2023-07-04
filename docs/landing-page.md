@@ -31,7 +31,7 @@ description: Landing Home Page for OPS235
 - **USB Flash Drive** (3.0 preferred)	**Minimum Capacity**: 16 GB
 - **Lab Logbook** (download & print Both sides per lab permitted)
     - **NOTE: If you've taken this class in a previous semester, you MAY NOT bring that version of the lab logbook to any testing.**
-    - [Download PDF](https://wiki.cdot.senecacollege.ca/w/imgs/OPS235_logbook.pdf)
+    - [Download PDF](/files/OPS235_logbook.pdf)
 - **Dos and Don'ts**
     - [Tips](/C-ExtraResources/tips.md)
 
