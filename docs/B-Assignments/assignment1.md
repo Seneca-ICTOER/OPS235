@@ -35,7 +35,7 @@ Review the `yum group*` commands and use them to:
 1. Find and install the Cinnamon desktop environment. Feel free to use the power of Google.
 2. Do the rest of the assignment (including the assignment submission) while running Cinnamon.
 
-Lab 3 (ADD LINK) contains practice in compiling source code. It is recommended to study these procedures for compiling and installing software from source code and use them to:
+[Lab 3](/A-Labs/lab3.md) contains practice in compiling source code. It is recommended to study these procedures for compiling and installing software from source code and use them to:
 
 1. Download and extract the source code for ISO Master.
 2. Compile and install it (you will need gtk2-devel installed).
