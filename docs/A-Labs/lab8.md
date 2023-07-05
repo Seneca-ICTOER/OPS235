@@ -17,7 +17,7 @@ There are different ways in which computers can be networked together. Some comp
 
 ![DHCP Pic](/img/Dhcp-pic.png)
 
-**Hot-spots (such as cafes or airport lounges) offer the ability for users to connect to the Internet (via** DHCP) f**rom their mobile devices (notebooks, netbooks, tablets, or smart phones). Finally, there are** hybrid **solutions that may offer both fixed IP address (computer workstations) and allow for wireless connections (via DHCP) to a mobile devices (like at your Seneca computer labs).**
+Hot-spots (such as cafes or airport lounges) offer the ability for users to connect to the Internet (via **DHCP**) from their mobile devices (notebooks, netbooks, tablets, or smart phones). Finally, there are **hybrid** solutions that may offer both fixed IP address (computer workstations) and allow for wireless connections (via DHCP) to a mobile devices (like at your Seneca computer labs).
 
 In lab6, you learned to connect your VMs to a VPN using a fixed IP Address. In this final lab, you will learn to set-up a **DHCP server** to automatically assign IP Addresses upon connection requests.
 
