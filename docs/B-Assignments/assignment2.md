@@ -54,7 +54,7 @@ Install the **mysql-server** (MySQL database server) package
       - If you do not see any messages, research how you can secure the MySQL installation and set the MySQL-root password.
       - Read those messages carefully, you are setting up a production MySQL server and there shouldn't be any "test" databases or anonymous users or users without a password.
 
-4. Set your MySQL root password to your Seneca e-mail username (without the _@myseneca.ca_ part).
+4. Set your MySQL root password to your Seneca e-mail username (without the _\@myseneca.ca_ part).
 5. This following part is challenging so take your time and read the instructions to make sure you do it properly, we have to set up a dedicated user and database for wordpress:
 
       1. **NOTE: If you decide to download the wordpress package during this section, please use the 5.0.x version here (use wget)**: https://wordpress.org/wordpress-5.0.7.tar.gz
@@ -78,7 +78,7 @@ Wordpress (like most web applications) is not available in the Fedora repositori
 
       - Change the DB_NAME, DB_USER, DB_PASSWORD to the appropriate values. **(Do not use the root account for your database connection! Marks will be deducted.)**
 
-6. Now go back to http://centos3/wordpress/ - you should see a Wordpress Welcome/Setup page.
+6. Now go back to [http://centos3/wordpress/](http://centos3/wordpress/) - you should see a Wordpress Welcome/Setup page.
 
       - Set the title to Your Name's Blog. For example for me it would be "OPS235 Professor's Blog"
       - Set the password to your learn ID.
@@ -109,16 +109,16 @@ Write a second post on your blog including for example:
 
 Open one or more terminals in c7host, SSH to centos3 from those terminals, and screenshot the following:
 
-**asg2-01-rpms.png**: List of additional RPMs installed for the assignment
-**asg2-02-apache.png**: Status of the _httpd_ service
-**asg2-03-mysql1.png**: Status of the _mysql_ service
-**asg2-04-mysql2.png**: MySQL output of the chained command: `show databases; use mysql; select User,Password from user; use myblog; show tables;`
-**asg2-05-wordpress.png**: Output of command: `ls -la /var/www/html/wordpress/`
-**asg2-06-wpconfig.png**: Output of command: `head -30 /var/www/html/wordpress/wp-config.php`
-**asg2-07-firefox.png**: Open a Firefox window to: http://centos3/wordpress/
-**asg2-08-iptables.png**: Output of command: `iptables -L -vn --line-numbers`
-**asg2-09-blogpost1.png**: Your first blog post in Firefox
-**asg2-10-blogpost2.png**: Your second blog post in Firefox
+- **asg2-01-rpms.png**: List of additional RPMs installed for the assignment
+- **asg2-02-apache.png**: Status of the _httpd_ service
+- **asg2-03-mysql1.png**: Status of the _mysql_ service
+- **asg2-04-mysql2.png**: MySQL output of the chained command: `show databases; use mysql; select User,Password from user; use myblog; show tables;`
+- **asg2-05-wordpress.png**: Output of command: `ls -la /var/www/html/wordpress/`
+- **asg2-06-wpconfig.png**: Output of command: `head -30 /var/www/html/wordpress/wp-config.php`
+- **asg2-07-firefox.png**: Open a Firefox window to: [http://centos3/wordpress/](http://centos3/wordpress/)
+- **asg2-08-iptables.png**: Output of command: `iptables -L -vn --line-numbers`
+- **asg2-09-blogpost1.png**: Your first blog post in Firefox
+- **asg2-10-blogpost2.png**: Your second blog post in Firefox
 
 Create a tarball named **asg2.tar.gz** containing all the images above and submit it on Blackboard.
 
