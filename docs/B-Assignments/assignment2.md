@@ -54,7 +54,7 @@ Install the **mysql-server** (MySQL database server) package
       - If you do not see any messages, research how you can secure the MySQL installation and set the MySQL-root password.
       - Read those messages carefully, you are setting up a production MySQL server and there shouldn't be any "test" databases or anonymous users or users without a password.
 
-4. Set your MySQL root password to your Seneca e-mail username (without the _\@myseneca.ca_ part).
+4. Set your MySQL root password to your Seneca e-mail username (without the @myseneca.ca part).
 5. This following part is challenging so take your time and read the instructions to make sure you do it properly, we have to set up a dedicated user and database for wordpress:
 
       1. **NOTE: If you decide to download the wordpress package during this section, please use the 5.0.x version here (use wget)**: https://wordpress.org/wordpress-5.0.7.tar.gz
