@@ -17,7 +17,7 @@ User account management is a very important operation that a Linux sysadmin does
 
 Another important operation for a Linux sysadmin is to manage services (eg. starting, restarting, stopping, disabling, enabling system services). Many students may think that the following topic is small and "not a big deal". Those students may say, "**How hard is running and stopping services**?"
 
-The process may not be hard, but knowing how to stop, start, restart and check the status of services is absolutely critical to a Linux server. **Aside from learning to trouble-shoot problems** by checking the status of running services, **understanding how to manage services is critical to help protect a Linux server from penetration** (this term is referred to as "**Hardening a system**"). Sometimes it is "what we don't know" that can harm us. One key element in hardening a computer system is to disable non essential networkng services to allow IDSs (**Intrusion Detection Systems**) to focus on a narrower range of policy violations. A Debian-based penetration testing distribution called Kali (formerly referred to as "BackTrack") allows sysadmins and security professionals to identify vulnerabilities in their computer systems, and thus improve (harden) their systems against penetration. Learning to monitor the status, enable and disable networking services underlies the **Backtrack** motto: "**The quieter you are, then more you will hear...**"
+The process may not be hard, but knowing how to stop, start, restart and check the status of services is absolutely critical to a Linux server. **Aside from learning to trouble-shoot problems** by checking the status of running services, **understanding how to manage services is critical to help protect a Linux server from penetration** (this term is referred to as "**Hardening a system**"). Sometimes it is "what we don't know" that can harm us. One key element in hardening a computer system is to disable non essential networkng services to allow IDSs (**Intrusion Detection Systems**) to focus on a narrower range of policy violations. A Debian-based penetration testing distribution called Kali (formerly referred to as "BackTrack") allows sysadmins and security professionals to identify vulnerabilities in their computer systems, and thus improve (harden) their systems against penetration. Learning to monitor the status, enable and disable networking services underlies the **Backtrack** motto: "***The quieter you are, then more you will hear...***"
 
 **Main Objectives:**
 
@@ -76,6 +76,10 @@ The /etc/passwd file is a database that stores user accounts (both system and re
 ![Passwd File](/img/Passwd-file.png)
 
 The /etc/passwd file contains records for users (system accounts and regular-user accounts). There are several fields including: **Username**, **password link** ("x" indicates hashed password stored in /etc/shadow file only accessible by root), **user-id, primary group-id, user defined field** (eg. Full Name), **default home directory**, and **default shell**.
+
+![User Management](https://wiki.cdot.senecacollege.ca/w/imgs/User-management.png)
+
+Another essential responsibility for Linux system administrators is to **add**, **modify**, and **remove** user accounts.
 
 ### Part 2: Adding, Removing, and Modifying Users
 
