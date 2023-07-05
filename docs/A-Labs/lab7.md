@@ -43,8 +43,9 @@ Protecting a computer network from unauthorized access is one of the many day-to
 
 **Networking Utilities**
 
-| [ssh](http://man7.org/linux/man-pages/man1/ssh.1.html) | [ssh-keygen](http://man7.org/linux/man-pages/man1/ssh-keygen.1.html) | [ssh-copy-id](http://linux.die.net/man/1/ssh-copy-id) | [scp](http://man7.org/linux/man-pages/man1/scp.1.html) | [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html) | [netstat](http://man7.org/linux/man-pages/man8/netstat.8.html) | [ifconfig](http://man7.org/linux/man-pages/man8/ifconfig.8.html) | [ip](http://man7.org/linux/man-pages/man8/ip.8.html) | [ping](http://man7.org/linux/man-pages/man8/ping.8.html) | [arp](http://man7.org/linux/man-pages/man8/arp.8.html) | [iptables](http://zenit.senecac.on.ca/wiki/index.php/IPTables) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [ssh](http://man7.org/linux/man-pages/man1/ssh.1.html) | [ssh-keygen](http://man7.org/linux/man-pages/man1/ssh-keygen.1.html) | [ssh-copy-id](http://linux.die.net/man/1/ssh-copy-id) | [scp](http://man7.org/linux/man-pages/man1/scp.1.html) | [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html) | [netstat](http://man7.org/linux/man-pages/man8/netstat.8.html) |
+| --- | --- | --- | --- | --- | --- |
+| [ifconfig](http://man7.org/linux/man-pages/man8/ifconfig.8.html) | [ip](http://man7.org/linux/man-pages/man8/ip.8.html) | [ping](http://man7.org/linux/man-pages/man8/ping.8.html) | [arp](http://man7.org/linux/man-pages/man8/arp.8.html) | [iptables](http://zenit.senecac.on.ca/wiki/index.php/IPTables) | |
 
 **Additional Utilities**
 
@@ -380,7 +381,7 @@ iptables -L -v
 **Clearing (Flushing) iptables Rules:**
 
 | **iptables -F** |	Clears the rules for ALL of the chains |
-| :--- | :--- |
+| --- | --- |
 | **iptables -F CHAIN-NAME** |	Clears the rules for only the specified CHAIN-NAME (eg. INPUT or OUTPUT) |
 
   9. Issue the following command to reset the iptables rules for the INPUT chain:
@@ -413,7 +414,7 @@ An example would be to set a default policy for incoming network traffic (INPUT 
 **Policy Setting Examples:**
 
 | **iptables -P INPUT DROP** |	Drops all incoming packets regardless of protocol (eg. tcp, udp, icmp), port numbers (eg. 22, 80) or source or destination IP Addresses. Setting a default rule to DROP all incoming traffic would make it easier to specify a few exceptions. |
-| :--- | :--- |
+| --- | --- |
 | **iptables -P INPUT ACCEPT** |	Accepts all incoming packets regardless of protocol (eg. tcp, udp, icmp), port numbers (eg. 22, 80) or source or destination IP Addresses. It would seem that setting a default rule to ACCEPT all incoming traffic would require A LOT of exceptions to help "lock-down" the server for protection! It really depends on the server set-up and what the Linux system administrator wants to accomplish. |
 
 **Perform the following steps:**
@@ -529,9 +530,7 @@ iptables-save > /etc/sysconfig/iptables
 
 Follow the submission instructions for lab 7 on Blackboard.
 
-**Time for a new backup!**
-
-If you have successfully completed this lab, make a new backup of your virtual machines as well as your host machine.
+**Time for a new backup!:** If you have successfully completed this lab, make a new backup of your virtual machines as well as your host machine.
 
 **Perform the Following Steps:**
 
@@ -548,11 +547,11 @@ wget https://ict.senecacollege.ca/~ops235/labs/lab7-check.bash
   6. Run the shell script and if there are any warnings, make fixes and re-run shell script until you receive "congratulations" message.
   7. Arrange proof of the following on the screen:
 
-- [x] centos2 VM:
+- [x] **centos2** VM:
 
     + have logged into centos3 VM using **public key authentication** (with a pass-phrase)
 
-- [x] c7host Machine:
+- [x] **c7host** Machine:
 
     + have tunneled Xwindows application from **centos1** via ssh
     + Run the **lab7-check.bash** script in front of your instructor (must have all  `OK`  messages)
