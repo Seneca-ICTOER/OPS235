@@ -525,8 +525,7 @@ wget https://ict.senecacollege.ca/~ops235/labs/lab1-check.bash
 - [x] Proof that c7host VM is set for **virtualization** (Refer to: **INVESTIGATION 1 - Part 1 - Step #29**)
 - [x] **Lab1 logbook** containing the values for:
 
-     + **IP address, MAC address, Default route (gateway)** and
-     + **DNS name server IP Address**
+     + **IP address, MAC address, Default route (gateway)** and **DNS name server IP Address**
 
 ## Practice For Quizzes, Tests, Midterm & Final Exam
 
