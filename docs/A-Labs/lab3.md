@@ -93,7 +93,7 @@ If you cannot log graphically into your machine (first two common problems), the
   2. Select Open Virtual Machine, and select the VM called c7host on your Solid State Drive.
   3. Launch your **c7host** machine, and login as as a regular user.
   4. Boot-up your **centos1** VM. **When the Grub Boot menu appears**, press the letter `e` (for "edit").
-  5. Using your arrow keys, scroll to next screen to linux, or linux16, or linux-efi command and type the word `single` as an argument after **quiet** (see diagram below for reference) and then press `ctrl-x` to boot.
+  5. Using your arrow keys, scroll to next screen to **linux**, or **linux16**, or **linux-efi** command and type the word `single` as an argument after **quiet** (see diagram below for reference) and then press `ctrl-x` to boot.
 
 ![Grub 2](/img/Grub2_1.png)
 
