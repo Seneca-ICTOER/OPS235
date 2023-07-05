@@ -17,7 +17,7 @@ description: Landing Home Page for OPS235
 
 **This course is the second in a series of courses about Linux technologies**
 
-- ULI101 taught you to be a Linux user. In OPS235, you will move from being Linux a _user_ to being a Linux system _administrator_.
+- ULI101 taught you to be a Linux _user_. In OPS235, you will move from being Linux a _user_ to being a Linux system _administrator_.
 - As a system administrator, you will be responsible for installing, configuring, adjusting, maintaining, and troubleshooting the operation of computer systems. This is a lot of responsibility, and with that responsibility comes power. You will be able to change anything on the system, and you will also have the ability to damage or destroy the system.
 - In this course you use an external SSD drive (USB 3) with the lab computers to set up a Linux system. You will also set up at least four additional Linux systems using "Virtual Machines", and therefore gain experience with different types of system configurations as well as setting up networking between systems.
 - Later courses (OPS335 and OPS435) teach you to administer Linux servers (web servers, DNS servers, FTP servers, file sharing servers) -- and to use more complex Python scripting to boost your system administration efficiency.
