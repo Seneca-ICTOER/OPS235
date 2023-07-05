@@ -69,7 +69,7 @@ The **df** and **du** commands are useful tools for Linux system administrators 
 
   1. Launch your **c7host** and **centos2** VMs.
   2. Switch to your **centos2** machine.
-  3. Open a terminal, and login as root.
+  3. Open a terminal, and login as **root**.
   4. Issue the command:
 
 ```bash
@@ -105,7 +105,7 @@ The **cron** daemon is used to refer to these shell scripts (or other commands o
 
   1. Perform this section in your **c7host** machine
   2. Make certain you are logged in as **root**.
-  3. Change to your **bin** directory.
+  3. Change to your **/root/bin** directory.
   4. Download the following shell script by issuing the following command:
 
 ```bash
@@ -182,7 +182,7 @@ Graphical programs like **system-config-lvm** are **deprecated**, and no longer 
 ls /dev/vd*
 ```
 
-   - **NOTE**: If nothing displays, issue the command: **sudo ls /dev/sd\*** and use that device pathname **/dev/sda** instead, and notify your instructor when about to run your lab5-check.bash shell script at the end of this lab.
+   - **NOTE**: If nothing displays, issue the command: **ls /dev/sd\*** and use that device pathname **/dev/sda** instead, and notify your instructor when about to run your lab5-check.bash shell script at the end of this lab.
 
   4. Issue the following command to install the **ssm** command:
 
@@ -228,19 +228,17 @@ fdisk /dev/vda
   11. At the fdisk prompt, issue the command `p` to review the partition information.
   12. Enter the command `w` to save partition table and exit (read the WARNING message).
 
-**You MUST reboot your centos2 VM**
+**You MUST reboot your centos2 VM:** You MUST now reboot your centos2 VM before proceeding!
 
-You MUST now reboot your centos2 VM before proceeding!
-
-  12. You **must restart** your centos2 VM to allow changes to take effect.
-  13. Verify that you created this partition by issuing the following command: 
+  13. You **must restart** your centos2 VM to allow changes to take effect.
+  14. Verify that you created this partition by issuing the following command: 
 
 ```bash
 fdisk -l /dev/vda
 ```
 
-  14. Re-issue the **ssm** command. Do you see a new /dev/vda3 partition under Physical Volumes?
-  15. To add the newly created partition, you need to add it into LVM to be used. Issue the following command to add the partition into LVM:
+  15. Re-issue the **ssm** command. Do you see a new /dev/vda3 partition under Physical Volumes?
+  16. To add the newly created partition, you need to add it into LVM to be used. Issue the following command to add the partition into LVM:
 
 ```bash
 pvcreate /dev/vda3
@@ -248,48 +246,44 @@ pvcreate /dev/vda3
 
    - (or _pvcreate /dev/sda3_ ) (enter **y** to proceed - ignore warning)
 
-**Check your VG name**
+**Check your VG name:** Run **vgs** to determine your Volume Group name. If it is just **centos** or **cl**, replace **centos_centos2** with **centos** or **cl** for the rest of the following commands in this lab.
 
-Run **vgs** to determine your Volume Group name. If it is just **centos** or **cl**, replace **centos_centos2** with **centos** or **cl** for the rest of the following commands in this lab.
-
-  16. Issue the following command to add your new-created and formatted partition called /dev/vda3 to your volume group:
+  17. Issue the following command to add your new-created and formatted partition called /dev/vda3 to your volume group:
 
 ```bash
 vgextend centos_centos2 /dev/vda3
 ```
 
-  17. Create a new logical volume by issuing the following command:
+  18. Create a new logical volume by issuing the following command:
 
 ```bash
 lvcreate -L 2G -n archive centos_centos2
 ```
 
-  18. Format your newly-created partition by issuing the command: 
+  19. Format your newly-created partition by issuing the command: 
 
 ```bash
 mkfs -t ext4 /dev/centos_centos2/archive
 ```
 
-  19. Issue the **ssm list** command to view the new physical volume and logical volume information.
+  20. Issue the **ssm list** command to view the new physical volume and logical volume information.
 
-**Pay attention to syntax**
+**Pay attention to syntax:** Note that the prefixed "+" or "-" in lvextend and lvreduce will add or subtract from the current size. Omitting these prefixes will **set** the LV size to what you specified.
 
-Note that the prefixed "+" or "-" in lvextend and lvreduce will add or subtract from the current size. Omitting these prefixes will **set** the LV size to what you specified.
-
-  20. Reduce the file-size by issuing the command: 
+  21. Reduce the file-size by issuing the command: 
 
 ```bash
 lvreduce -r -L -0.5G centos_centos2/archive
 ```
 
-  21. Issue the **ssm list** command to verify.
-  22. Increase the file-size by issuing the command: 
+  22. Issue the **ssm list** command to verify.
+  23. Increase the file-size by issuing the command: 
 
 ```bash
 lvextend -r -L +1G centos_centos2/archive
 ```
 
-  23. Issue the **ssm list** command to verify.
+  24. Issue the **ssm list** command to verify.
 
 ### Part 2: Adding Additional Virtual Hard Drives
 
@@ -387,7 +381,7 @@ mount -t ext4 /dev/centos_centos2/archive /archive
 umount /archive
 ```
 
-  7. Issue the mount command (without arguments) to confirm it has been unmounted.
+  7. Issue the **mount** command (without arguments) to confirm it has been unmounted.
 
 We will now edit the /etc/fstab file in order to have the /dev/vda3 partition automatically mounted to the /archive directory upon system boot-up
 
