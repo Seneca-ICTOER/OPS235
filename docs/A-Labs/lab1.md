@@ -34,7 +34,7 @@ It is ESSENTIAL to have a **Solid State Drive (SSD) with a minimum storage capac
 ### Minimum Required Materials
 
 1. **Solid State Drive** Minimum Size: 250GB
-2. **Lab Logbook** [(Click Here to Download)](https://wiki.cdot.senecacollege.ca/w/imgs/OPS235_logbook.pdf)
+2. **Lab Logbook** [(Click Here to Download)](/files/OPS235_logbook.pdf)
 
 ### Linux Command Reference
 
@@ -142,7 +142,8 @@ Before you can install your CentOS Full Install DVD onto your Virtual Machine, y
   25. Quickly review your VM settings in the final setup wizard dialog box and click **Finish**.
   26. You should now see a detailed screen for your **c7host** VM on the right-hand side.
 
-         - **ATTENTION:** PRIOR to proceeding, you MUST perform the following step BEFORE starting your Host VM in order to allow your Host VM to run correctly!!! Students that do not follow these procedures exactly will run in to problems when trying to perform lab2 !!! You have been warned!!!.
+         - **ATTENTION: PRIOR to proceeding, you MUST perform the following step BEFORE starting your Host VM in order to allow your Host VM to run correctly!!!**
+         - **Students that do not follow these procedures exactly will run in to problems when trying to perform lab2 !!! You have been warned!!!.**
 
   27. Make certain that your Host VM is **NOT** powered on before proceeding!
   28. In the right-hand window (below "c7host"), and below "_Power on this virtual machine_", click the link called **Edit virtual machine settings**.
@@ -364,7 +365,7 @@ Running software updates regularly is an important part of keeping your computer
   3. Type the command: 
 
 ```bash
-sudo yum update
+yum update
 ```
 
   4. Follow the prompts.
