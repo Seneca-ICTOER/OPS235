@@ -18,7 +18,7 @@ While you are performing this lab, it is recommended to generally note the major
 **Main Objectives**
 
   - Installing additional Virtualization Software on your **c7host** machine (**KVM**)
-  - Create 3 separate VMs (virtual machines) using different installation methods:
+  - **Create 3 separate VMs (virtual machines) using different installation methods:**
 
        + **centos1**: Network CentOS Installation (**Graphical**)
        + **centos2**: Network CentOS Installation (minimal install - **CLI only**)
@@ -70,7 +70,7 @@ We will now install the KVM package in order to create our remaining "nested" VM
 **Perform the following steps:**
 
   1. Log into your c7host machine. and switch to root user.
-  2. perform a software update on your c7host VM by issuing the following command: 
+  2. perform a software update on your **c7host** VM by issuing the following command: 
 
 ```bash
 yum update
@@ -97,7 +97,7 @@ yum update
   3. As root, install the virtualization software by issuing the command:
 
 ```bash
-sudo yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python \
+yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python \
 libvirt-client virt-install virt-viewer bridge-utils
 ```
 
@@ -428,7 +428,7 @@ virsh define centos4.xml
 
 You will continue our use of Bash Shell scripting by first creating a Bash Shell script that will allow the Linux sysadmin to select their created VMs for backup to root's home directory. Afterwards you will download, view and run a couple Bash Shell scripts that use the virsh command to start and stop your virtual machines.
 
-**Please check out these [Bash Shell Tips](/C-ExtraResources/bash-shell-scripting-tips.md) first before continuing with the following steps**
+**Please check out these [Bash Shell Scripting Tips](/C-ExtraResources/bash-shell-scripting-tips.md) first before continuing with the following steps**
 
 **Perform the following steps:**
 
@@ -547,10 +547,15 @@ Follow the submission instructions for lab 2 on Blackboard.
 1. Use the **virsh start** command to launch all the VMs (**centos1**, **centos2**, and **centos3**).
 2. Inside each virtual machine, run `ip a` on the command line. Open a Terminal window in centos1 to do so. You'll need the IP address of each machine for the next steps.
 3. Switch to your **c7host** VM, open a terminal, login as root, and change directory to **/root/bin**.
-4. Issue the Linux command: `wget https://ict.senecacollege.ca/~ops235/labs/lab2-check.bash`
-5. Give the **lab2-check.bash** file execute permissions (for the file owner).
-6. Run the shell script and if any warnings, make fixes and re-run shell script until you receive "congratulations" message.
-7. Arrange proof of the following on the screen:
+4. Issue the Linux command:
+
+```bash
+wget https://ict.senecacollege.ca/~ops235/labs/lab2-check.bash
+```
+
+8. Give the **lab2-check.bash** file execute permissions (for the file owner).
+9. Run the shell script and if any warnings, make fixes and re-run shell script until you receive "congratulations" message.
+10. Arrange proof of the following on the screen:
 
 - [x] **All VMs:**
 
