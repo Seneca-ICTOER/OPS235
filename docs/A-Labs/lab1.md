@@ -393,7 +393,7 @@ Therefore, it makes sense to also have a record of the installed computer softwa
 | **Command(s)** | **Purpose** |
 | --- | --- |
 | `uname -rv`, `hostname`, `ps -ef` | Basic Linux OS information such as **kernel** version, **host-name** of Linux server, and all **processes** that are running on the system after installation. |
-| `rpm -q -a \| wc -l`, `rpm -q -a -l \| wc -l`, `rpm -q -l gedit \| wc -l` | Obtain number of installed packages in the rpm database. Option **-q** is to "query" information, option **-a** means for all installed packages, option **-l** means all files installed as opposed to just the application. |
+| `rpm -q -a | wc -l`, `rpm -q -a -l | wc -l`, `rpm -q -l gedit | wc -l` | Obtain number of installed packages in the rpm database. Option **-q** is to "query" information, option **-a** means for all installed packages, option **-l** means all files installed as opposed to just the application. |
 | `ip address show`, `ip route show`, `nslookup` (at prompt, enter command: **server**) | Obtain network connectivity confirmation including: **IP ADDRESS, Netmask, routing** (default gateway), and the default **Domain Name Server**. |
 
 You may have learned about creating and running Bash Shell Scripts in your ULI101 course. Shell scripts help Linux users and system administrators to automate repetitive tasks to become more efficient and to help them save time. In order to avoid confusion with syntax, you will not be writing bash scripts in this course. You will however still run bash commands to perform various tasks, e.g. to generate information reports for your newly-installed Linux host machine.
