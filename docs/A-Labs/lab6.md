@@ -82,7 +82,7 @@ This diagram shows the current network configuration of your **c7host** machine 
   13. Proceed with changes, and click **Finish**.
   14. We will now reconfigure each of our VMs to use our new virtual network **network1**
 
-         1. Let's start with our **centos1 VM**. Double-click on your **centos1** VM, but instead of running the VM, click on the view menu, and select: **Details**
+         1. Let's start with our **centos1 VM**. Double-click on your **centos1** VM, but instead of running the VM, click on the **view** menu, and select: **Details**
 
          - (Note: the Virtual Machine window will appear - do not start virtual machine)
 
