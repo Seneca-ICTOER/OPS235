@@ -105,7 +105,7 @@ Although the private network has been setup via the **Virtual Machine Manager**,
   3. Within your **centos1 VM**, click **Applications** menu, then select **System Tools**, and then **Settings**.
   4. In the _Settings_ Dialog Box, click on the **Network** icon.
   5. For the **Wired** connection, click the **settings** button (The icon appears as a gear located at the bottom right-hand corner of the dialog box).
-  6. Select the **IPv4** tab. Change Address from _Automatic_ (DHCP) to **Manual**.
+  6. Select the **IPv4** tab. Change Address from _Automatic_ (_DHCP_) to **Manual**.
   7. In the Addresses section, enter the following information:
 
         + IP Address: **192.168.235.11**
@@ -263,7 +263,7 @@ Network service problems may not be entirely related to a "broken" network conne
   6. From one of your VM's login to your host using the **ssh** command.
   7. On your c7host VM rerun the `netstat -at` command and in addition to the **LISTEN** port it should list a 2nd entry with a state of ESTABLISHED. This shows that there is a current connection to your ssh server.
   8. Exit your ssh connection from the VM and rerun the command on the CentOS host. Instead of **ESTABLISHED** it should now show a state of **CLOSE_WAIT**. Indicating that the TCP connection is being closed.
-  9. On your c7host VM, try the command: `netstat -at` How is this output different? Without the -n option ss attempts to resolve IP addresses to host names (using /etc/hosts) and port numbers to service names (using /etc/services)
+  9. On your c7host VM, try the command: `netstat -atn` How is this output different? Without the -n option ss attempts to resolve IP addresses to host names (using /etc/hosts) and port numbers to service names (using /etc/services)
   10. Examine the **/etc/services** file and find which ports are used for the services: ssh, sftp, http
   11. Now execute the command netstat -at What is the difference between the options: -at and -au? When examining UDP ports why is there no state?
 
