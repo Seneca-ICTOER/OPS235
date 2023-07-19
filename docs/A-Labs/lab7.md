@@ -45,7 +45,7 @@ Protecting a computer network from unauthorized access is one of the many day-to
 
 | [ssh](http://man7.org/linux/man-pages/man1/ssh.1.html) | [ssh-keygen](http://man7.org/linux/man-pages/man1/ssh-keygen.1.html) | [ssh-copy-id](http://linux.die.net/man/1/ssh-copy-id) | [scp](http://man7.org/linux/man-pages/man1/scp.1.html) | [sftp](http://man7.org/linux/man-pages/man1/sftp.1.html) | [netstat](http://man7.org/linux/man-pages/man8/netstat.8.html) |
 | --- | --- | --- | --- | --- | --- |
-| [ifconfig](http://man7.org/linux/man-pages/man8/ifconfig.8.html) | [ip](http://man7.org/linux/man-pages/man8/ip.8.html) | [ping](http://man7.org/linux/man-pages/man8/ping.8.html) | [arp](http://man7.org/linux/man-pages/man8/arp.8.html) | [iptables](http://zenit.senecac.on.ca/wiki/index.php/IPTables) | |
+| [**ifconfig**](http://man7.org/linux/man-pages/man8/ifconfig.8.html) | [**ip**](http://man7.org/linux/man-pages/man8/ip.8.html) | [**ping**](http://man7.org/linux/man-pages/man8/ping.8.html) | [**arp**](http://man7.org/linux/man-pages/man8/arp.8.html) | [**iptables**](http://zenit.senecac.on.ca/wiki/index.php/IPTables) | |
 
 **Additional Utilities**
 
