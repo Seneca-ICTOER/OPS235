@@ -373,7 +373,7 @@ yum update
 
 **Answer Investigation 2 observations (all parts and questions) in your lab log book.**
 
-## Investigation 3: Using the Shell to Generate System Information Reports
+## Investigation 3: Using Shell Scripting to Generate System Information Reports
 
 It is very common for System Administrators to keep records regarding their installed computer systems. For example, it is necessary to have a record of all the hardware information for each machine in order to help fix computer hardware problems, and to assist when purchasing additional consistent computer hardware.
 
