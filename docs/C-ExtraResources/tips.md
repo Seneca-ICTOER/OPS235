@@ -45,7 +45,7 @@ Seemingly "small errors", or "skipping instructions" in earlier labs can have ne
 
 You can shutdown using the GUI or with the `poweroff`, `reboot`, `init`, or `shutdown` commands. Shut down your virtual machines before shutting down your main system.
 
-## Failure to these Lab Tips
+## Failure to Listen to These Lab Tips
 
 Failure to listen to lab "suggestions" by this resource could result in loss of work... and a reaction similar to the one below
 
